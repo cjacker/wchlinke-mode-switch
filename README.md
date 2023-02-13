@@ -1,2 +1,29 @@
 # wchlinke-mode-switch
-Utilities to switch wch-linkE modes between DAP and RV from host
+
+'wchlinke-mode-switch' is a command-line tool to switch WCH-LinkE modes between DAP and RV. 
+
+WCH-LinkE can be used for online debugging and downloading of WCH RISC-V MCU, and also for online debugging and downloading of ARM MCU with SWD/JTAG interface. It also comes with a serial port for easy debugging output.
+
+The dual modes (DAP / RV) of WCH-LinkE can be switched by some official close source utilities, such as MounRiver Studio, WCHISPTool, etc. and also can be switched by onboard button.
+
+For more infomation aboud this adapter, please refer to [official website](http://www.wch-ic.com/downloads/WCH-LinkUserManual_PDF.html).
+
+## Install:
+```
+$ make
+$ sudo make install DESTDIR=<as you specify>
+```
+
+## Usage:
+```
+$ wchlinke-mode-switch
+```
+
+The output looks like:
+```
+Found WCH Link or E in DAP Mode.
+Switch to RV Mode.
+```
+
+**NOTE:** only WCH-LinkE can be supported, old WCH-LINK is deprecated and can not use this tool to switch mode from host.
+
