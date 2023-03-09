@@ -1,4 +1,10 @@
-SUBSYSTEM=="usb", ATTR{idVendor}="1a86", ATTR{idProduct}=="8010", MODE="666"
+# RV-Link of WCH-Link and E
+SUBSYSTEM=="usb", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="8010", MODE="666"
+# DAP-Link of WCH-Link
+SUBSYSTEM=="usb", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="8011", MODE="666"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="4348", ATTRS{idProduct}=="55e0", MODE="666" 
 
-SUBSYSTEM=="usb", ATTR{idVendor}="4348", ATTR{idProduct}=="55e0", MODE="666" 
-SUBSYSTEM=="usb", ATTR{idVendor}="1a86", ATTR{idProduct}=="8012", MODE="666"
+# DAP-Link of WCH-LinkE
+SUBSYSTEM=="usb", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="8012", MODE="666"
+# UART of WCH-Link and E
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", MODE="0666", GROUP="dialout"
