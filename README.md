@@ -4,7 +4,7 @@
 
 WCH-LinkE support online debugging and downloading of WCH RISC-V MCU (2 wires RVSWD / ch32v003 1 wire SDI interface), and also support online debugging and downloading of ARM MCU with SWD/JTAG interface. It also have a serial port.
 
-The dual modes (DAP / RV) of WCH-LinkE can be switched by some official close source utilities, such as MounRiver Studio, WCHISPTool, etc. And also can be switched by onboard 'ModeS' button (and it have a case ?!).
+The dual modes (DAP / RV) of WCH-LinkE can be switched by some official close source utilities, such as MounRiver Studio, WCHISPTool, etc. And also can be switched by onboard 'ModeS' button (and why it have a case ?!).
 
 <img src="./wch-linke.png" width=70%/>
 
