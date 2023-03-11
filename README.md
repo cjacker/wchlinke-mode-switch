@@ -33,5 +33,5 @@ Found WCH Link or E in RV Mode.
 Switch to DAP Mode.
 ```
 
-**NOTE:** only WCH-LinkE can be supported, old WCH-LINK is deprecated and can not use this tool to switch mode from host.
+**NOTE:** only WCH-LinkE can be supported, old WCH-LINK is deprecated and can not use this tool to switch mode from host. Mounriver studio will flash a new firmware each time to swith the modes of old WCH-LINK(without E).
 
