@@ -263,12 +263,15 @@ int main(void)
   
   if(read_bulk(handle, EP_IN, buffer, 7))
   {
-    if(!dapmode &&
-       memcmp( buffer, "\x82\x0d\x04\x02\x08\x02\x00", 7 ) != 0) {
-      printf("Device reply error!\nIt's not wch-linke?");
-      goto end;
-    } else if (dapmode &&
-               memcmp( buffer, "\x82\x0d\x04\x02\x08\x02\x01", 7 ) != 0) {
+    char major_ver = buffer[3];
+    char minor_ver = buffer[4];
+    char mcu = buffer[5];
+    char mode = buffer[6];
+    if(!(memcmp( buffer, "\x82\x0d\x04", 3 ) == 0 &&
+         (mcu == 0x02 || mcu == 0x12) &&
+         major_ver == 0x02 &&
+         minor_ver >= 0x08 &&
+         (mode == 0x00 || mode == 0x01))) {
       printf("Device reply error!\nIt's not wch-linke?");
       goto end;
     }
