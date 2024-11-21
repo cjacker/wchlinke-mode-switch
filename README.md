@@ -1,5 +1,7 @@
 # wchlinke-mode-switch
 
+**Deprecated, Mode switch already supported by [wlink](https://github.com/ch32-rs/wlink), please use wlink instead.**
+
 'wchlinke-mode-switch' is a command-line tool to switch WCH-LinkE (with latest firmware) modes between DAP and RV from host, and tested with WCH official WCH-LinkE and MuseLab nano WCH-LinkE adapter.
  
 WCH-LinkE support online debugging and downloading of WCH RISC-V MCU (2 wires RVSWD / ch32v003 1 wire SDI interface), and also support online debugging and downloading of ARM MCU with SWD/JTAG interface. It also have a serial port.
