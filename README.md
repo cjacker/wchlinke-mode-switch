@@ -1,6 +1,6 @@
 # wchlinke-mode-switch
 
-**Deprecated, Mode switch already supported by [wlink](https://github.com/ch32-rs/wlink), please use wlink instead.**
+**This tool is deprecated by wlink, mode switch already supported by [wlink](https://github.com/ch32-rs/wlink), please use wlink instead.**
 
 'wchlinke-mode-switch' is a command-line tool to switch WCH-LinkE (with latest firmware) modes between DAP and RV from host, and tested with WCH official WCH-LinkE and MuseLab nano WCH-LinkE adapter.
  
